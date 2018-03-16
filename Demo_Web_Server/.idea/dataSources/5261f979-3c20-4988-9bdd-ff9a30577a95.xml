@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - Cycle@112.74.186.129">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="Cycle">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mydb"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="r_demo_db"/>
+    <schema id="8" parent="1" name="sys"/>
+    <table id="9" parent="2" name="CycleFanDb"/>
+    <table id="10" parent="2" name="CycleGroupingSituationDb"/>
+    <table id="11" parent="2" name="CycleKey"/>
+    <table id="12" parent="2" name="CyclePointInfoDb"/>
+    <table id="13" parent="2" name="CycleUserInfoDb"/>
+    <column id="14" parent="9" name="CycleUserID">
+      <Position>1</Position>
+      <DataType>char(38)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="15" parent="9" name="CycleLikeID">
+      <Position>2</Position>
+      <DataType>char(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="9" name="Flag">
+      <Position>3</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="17" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CycleUserID
+CycleLikeID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="18" parent="10" name="CycleUserID">
+      <Position>1</Position>
+      <DataType>char(38)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="19" parent="10" name="GroupMessages">
+      <Position>2</Position>
+      <DataType>mediumtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="10" name="Flag">
+      <Position>3</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="10" name="CycleStartDate">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="22" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CycleUserID
+CycleStartDate</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="23" parent="11" name="CycleUserID">
+      <Position>1</Position>
+      <DataType>char(38)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="11" name="AccessToken">
+      <Position>2</Position>
+      <DataType>char(38)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="11" name="CycleAccessTokenTime">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="26" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CycleUserID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="27" parent="12" name="CycleUserID">
+      <Position>1</Position>
+      <DataType>char(38)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="12" name="CyclePointMessage">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="29" parent="12" name="Flag">
+      <Position>3</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="12" name="CycleStartDate">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="31" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CycleUserID
+CycleStartDate</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="32" parent="13" name="CycleUserID">
+      <Position>1</Position>
+      <DataType>char(38)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="13" name="CyceleUserMessage">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="34" parent="13" name="Flag">
+      <Position>3</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="13" name="CycleLogInID">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="36" parent="13" name="CycleLogInType">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="37" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CycleUserID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

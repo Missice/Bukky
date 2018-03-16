@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="me.model.CycleFanDbEntity" table="CycleFanDb" schema="Cycle">
+        <composite-id>
+            <!-- key-property标签表示哪一些属性对应复合主键 -->
+            <key-property name="cycleUserId" column="CycleUserID" type="string"></key-property>
+            <key-property name="cycleLikeId" column="CycleLikeID" type="string"></key-property>
+        </composite-id>
+        <property name="flag" column="Flag"/>
+    </class>
+</hibernate-mapping>
